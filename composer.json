@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-0": {
-            "Kwf_Slick_": ""
+            "Kwc_Slick_": ""
         }
     }
 }
