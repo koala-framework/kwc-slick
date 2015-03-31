@@ -1,0 +1,25 @@
+{
+    "name": "koala-framework/kwf-slick",
+    "description": "Koala Framework Slick Integration",
+    "homepage": "http://www.koala-framework.org/",
+    "license": "BSD-2-Clause",
+    "type": "library",
+    "require": {
+        "koala-framework/koala-framework": "3.8.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "extra": {
+        "require-bower": {
+            "slick.js": "1.4.1"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-0": {
+            "Kwf_Slick_": ""
+        }
+    }
+}
