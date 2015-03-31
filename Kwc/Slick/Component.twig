@@ -1,8 +1,10 @@
 <div class="{{ cssClass }}">
-    <input type="hidden" value="{{ config||json.decode() }}" />
+    <input type="hidden" value="{{ config|json_encode() }}" />
     <div class="{% if listItems|length > 1 %}listWrapper{% else %}imageWrapper{% endif %}">
+        {% for child in listItems %}
         <div class="{{ child['class'] }}" style="{{ child['style'] }}">
-            {{ rendere.component(child['data']) }}
+            {{ renderer.component(child['data']) }}
         </div>
+        {% endfor %}
     </div>
 </div>

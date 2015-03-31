@@ -1,0 +1,68 @@
+@import "kwf/css3/border-radius";
+
+.cssClass {
+    .listWrapper {
+        position: relative;
+
+        .slickNext, .slickPrevious {
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            height: 40px;
+            width: 40px;
+            border: none;
+            background: #444444;
+            text-align: center;
+            cursor: pointer;
+
+            span {
+                font-size: 32px;
+                height: 40px;
+                line-height: 40px;
+                color: white;
+                display: block;
+            }
+        }
+
+        .slickPrevious {
+            left: 0;
+        }
+
+        .slickNext {
+            right: 0;
+        }
+
+        .slickDots {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            > li {
+                display: inline-block;
+
+                button {
+                    @include border-radius(50%);
+                    font-size: 0;
+                    line-height: 0;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0px;
+                    margin: 0 2px;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background: #777;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #000;
+                    }
+                }
+            }
+        }
+    }
+}
