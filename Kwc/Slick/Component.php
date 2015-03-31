@@ -8,23 +8,14 @@ class Kwc_Slick_Component extends Kwc_Abstract_List_Component
         $ret['generators']['child']['component'] = 'Kwc_Slick_Image_Component';
 
         // For more settings see: https://github.com/kenwheeler/slick/
-        $ret['slickConfig'] = array(
-            'autoplay' => false,
-            'autoplaySpeed' => 3000,
-            'centerMode' => false,
-            'infinite' => true,
-            'fade' => false,
-            'arrows' => true,
-            'dots' => true,
-            'speed' => 500,
-            'pauseOnHover' => true,
-            'slidesToShow' => 1,
-            'slidesToScroll' => 1,
-            'mobileFirst' => true,
-            'prevArrow' => '<div class="slickPrevious"><span>&lsaquo;</span></div>',
-            'nextArrow' => '<div class="slickNext"><span>&rsaquo;</span></div>',
-            'dotsClass' => 'slickDots'
-        );
+        $ret['slickConfig'] = array();
+        $ret['slickConfig']['dots'] = true;
+        $ret['slickConfig']['autoplay'] = false;
+        $ret['slickConfig']['speed'] = 500;
+        $ret['slickConfig']['mobileFirst'] = true;
+        $ret['slickConfig']['prevArrow'] = '<div class="slickPrevious"><span>&lsaquo;</span></div>';
+        $ret['slickConfig']['nextArrow'] = '<div class="slickNext"><span>&rsaquo;</span></div>';
+        $ret['slickConfig']['dotsClass'] = 'slickDots';
 
         $ret['assetsDefer']['dep'][] = 'slick.js';
         return $ret;
