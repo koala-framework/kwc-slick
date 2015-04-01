@@ -13,6 +13,7 @@ class Kwc_Slick_Component extends Kwc_Abstract_List_Component
         $ret['slickConfig']['autoplay'] = false;
         $ret['slickConfig']['speed'] = 500;
         $ret['slickConfig']['mobileFirst'] = true;
+        $ret['slickConfig']['startRandom'] = false;
         $ret['slickConfig']['prevArrow'] = '<div class="slickPrevious"><span>&lsaquo;</span></div>';
         $ret['slickConfig']['nextArrow'] = '<div class="slickNext"><span>&rsaquo;</span></div>';
         $ret['slickConfig']['dotsClass'] = 'slickDots';
