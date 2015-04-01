@@ -13,3 +13,14 @@ Kwf.onJElementReady('.kwcSlick', function(el, config) {
         Kwf.callOnContentReady(slickWrapper, { action: 'render' });
     }
 });
+Kwf.onJElementWidthChange('.cssClass', function(el) {
+    /**
+     *  https://github.com/kenwheeler/slick/issues/790
+     *  Todo: after slick update to >1.4.1 check if this fix is needed any more
+     *  and remove it when not.
+    **/
+    var slickslider = el.find('.slick-slider');
+    if (slickslider) {
+        slickslider[0].slick.setPosition();
+    }
+});
